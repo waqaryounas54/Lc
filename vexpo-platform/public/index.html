@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>VExpo Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 2rem; }
+    input, textarea { display:block; margin: .25rem 0 .75rem; padding:.5rem; width: 300px; }
+    button { padding: .5rem 1rem; }
+    pre { background:#f5f5f5; padding:1rem; max-width: 700px; overflow:auto; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1>VExpo Platform</h1>
+    <div id="auth">
+      <h2>Register</h2>
+      <input id="regName" placeholder="Name"/>
+      <input id="regEmail" placeholder="Email"/>
+      <input id="regPassword" placeholder="Password" type="password"/>
+      <button id="btnRegister">Register</button>
+      <h2>Login</h2>
+      <input id="loginEmail" placeholder="Email"/>
+      <input id="loginPassword" placeholder="Password" type="password"/>
+      <button id="btnLogin">Login</button>
+      <p id="status"></p>
+    </div>
+    <div id="events" style="display:none">
+      <h2>Events</h2>
+      <button id="btnLoadEvents">Load Events</button>
+      <pre id="eventsPre"></pre>
+      <h3>Create Event</h3>
+      <input id="evName" placeholder="Name"/>
+      <input id="evStart" placeholder="Start ISO Date"/>
+      <input id="evEnd" placeholder="End ISO Date"/>
+      <textarea id="evDesc" placeholder="Description"></textarea>
+      <button id="btnCreateEvent">Create</button>
+      <p id="eventsStatus"></p>
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
